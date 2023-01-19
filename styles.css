@@ -1,7 +1,31 @@
+@media(max-width: 768px) {
+    #image {
+        display: none;
+    }
+
+   .image-topbar.phone-ui, body, html {
+    display: block;
+    height: 500px;
+    min-width: 700px;
+   }
+   
+   .container {
+    flex-direction: column;
+   }
+
+   .form-section {
+    margin-top: -780px;
+   }
+}
+
 html {
     background-color: #121114;
     color: #eef1ef;
     font-family: 'Jost', sans-serif;
+}
+
+.image-topbar {
+    display: none;
 }
 
 .container {
