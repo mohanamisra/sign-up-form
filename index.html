@@ -23,18 +23,18 @@
                 <p>You know you can.</p>
             </div>
 
-            <form action = "" method = "post">
+            <form action = "" method = "get">
                 <fieldset>
                     <legend><span class = "accessibility">Hero Sign-Up-Form</span></legend>
                     <div class = "form-input">
                         <div class = "form-row">
                             <div class = "form-element">
-                                <label for = "first-name">First Name</label>
-                                <input type = "text" name = "first-name" id = "first-name">
+                                <label for = "name">Name</label>
+                                <input type = "text" name = "name" id = "name" required>
                             </div>
                             <div class = "form-element">
-                                <label for = "last-name">Last Name</label>
-                                <input type = "text" name = "last-name" id = "last-name">
+                                <label for = "supe-name">Supe-Name</label>
+                                <input type = "text" name = "supe-name" id = "supe-name" required>
                             </div>
                         </div>
                         <div class = "form-row">
@@ -44,25 +44,26 @@
                             </div>
                             <div class = "form-element">
                                 <label for = "phone-number">Phone Number</label>
-                                <input type = "tel" name = "phone-number" id = "phone-number">
+                                <input type = "tel" name = "phone-number" id = "phone-number" minlength = "10" required>
                             </div>
                         </div>
                         <div class = "form-row">
                             <div class = "form-element">
                                 <label for = "password">Password</label>
-                                <input type = "password" name = "password" id = "password">
+                                <input type = "password" name = "password" id = "password" minlength = "8" required>
                             </div>
                             <div class = "form-element">
                                 <label for = "confirm-password">Confirm Password</label>
-                                <input type = "password" name = "confirm-password" id = "confirm-password">
+                                <input type = "password" name = "confirm-password" id = "confirm-password" required>
                             </div>
                         </div>
                     </div>
                 </fieldset>
-                <button type = "submit" class = "form-text submit">Create Account</button>
+                <button type = "submit" class = "form-text submit" onclick = "passwordConfirmation()">Create Account</button>
                 <p class = "form-text log-in">Already have an account? <a href = "#">Log in</a></p>
             </form>
         </div>
     </div>
+    <script src = "script.js"></script>
 </body>
 </html>
